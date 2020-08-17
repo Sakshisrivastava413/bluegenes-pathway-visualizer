@@ -115,8 +115,12 @@ function createCytoscapeConfig(elements) {
 function createTooltip(position, content) {
 	const div = document.createElement('div');
 	const rootElem = document.getElementsByClassName('rootContainer')[0];
-	if (rootElem.offsetWidth - position.x > 300) position.x += 50;
-	else position.x -= 350;
+	const xDiff = rootElem.offsetWidth - position.x;
+	const yDiff = rootElem.offsetHeight - position.y;
+	if (xDiff > 1000) position.x += 200;
+	else if (xDiff < 400) position.x -= 100;
+	if (yDiff > 420) position.y += 200;
+	else if (yDiff < 200) position.y += 50;
 	div.style.background = 'gray';
 	div.style.position = 'absolute';
 	div.style.color = 'white';
