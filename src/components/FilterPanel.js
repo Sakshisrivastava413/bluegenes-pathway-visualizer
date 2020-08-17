@@ -79,7 +79,7 @@ const FilterPanel = ({
 					))}
 				</div>
 			</div>
-			<hr />
+			<hr className="bar" />
 			<div className="button-container">
 				<button type="button" className="filter-button" onClick={filterGraph}>
 					Filter ({checkedCount})
