@@ -1,5 +1,5 @@
 {
-  "accepts": ["id", "ids"],
+  "accepts": ["ids"],
   "classes": ["Gene"],
   "columnMapping": {
     "Gene": {
