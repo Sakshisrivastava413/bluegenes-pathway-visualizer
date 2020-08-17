@@ -129,7 +129,6 @@ const RootContainer = ({ serviceUrl, entity }) => {
 
 	return (
 		<div className="rootContainer">
-			<span className="chart-title">Pathway Network</span>
 			{loading ? (
 				<Loading />
 			) : (

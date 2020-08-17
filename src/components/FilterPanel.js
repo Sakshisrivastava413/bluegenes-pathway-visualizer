@@ -25,7 +25,7 @@ const FilterPanel = ({
 	return (
 		<div className="filter-panel-root">
 			<h4 className="filter-panel-title">Filter Panel</h4>
-			<hr />
+			<hr className="bar" />
 			<div className="node-filter">
 				<div>Shared Nodes:</div>
 				<div>
