@@ -134,12 +134,12 @@ const RootContainer = ({ serviceUrl, entity }) => {
 			) : (
 				<div className="innerContainer">
 					<div className="graph">
-						{filteredList.length ? (
+						{!sharedPathwayList.length || !filteredList.length ? (
+							<h2>Data Not Found!</h2>
+						) : (
 							<GenePathwayNetwork
 								data={toggleStatus ? sharedPathwayList : filteredList}
 							/>
-						) : (
-							<h2>Data Not Found!</h2>
 						)}
 					</div>
 					{pathwayList.length ? (
